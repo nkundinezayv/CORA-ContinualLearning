@@ -120,7 +120,7 @@ CORA overcomes these limitations through:
 
 ### Performance Metrics (40-Epoch Run)
 
-![CORA Training Metrics - 40 Epoch Run](cora-training-metrics.png)
+<img width="1477" height="950" alt="Screenshot 2025-12-04 at 16 54 19" src="https://github.com/user-attachments/assets/f9d1ce5a-fea0-4b30-8530-e9fbbfd88169" />
 
 #### Key Observations
 
