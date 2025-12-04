@@ -57,7 +57,7 @@ All modalities are projected into a shared reasoning space, enabling experts to 
 
 ### Performance Metrics (40-Epoch Run)
 
-![CORA Training Metrics - 40 Epoch Run](cora-training-metrics.png)
+<img width="1477" height="950" alt="Screenshot 2025-12-04 at 16 54 19" src="https://github.com/user-attachments/assets/7b2921f8-78f1-435e-ad7e-3bf57d808ab6" />
 
 #### Key Observations
 
