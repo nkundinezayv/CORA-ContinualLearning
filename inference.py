@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """
-Continuum-Prime-CML (CML-Core) – Inference Engine
-
 This script:
-- Loads the trained CML-Core model snapshot from ./models
+- Loads the trained Model snapshot from ./models
 - Supports image and text prediction for any task with:
     encoder_{TASK}.pth
     head_{TASK}.pth
