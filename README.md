@@ -230,6 +230,4 @@ This repository provides:
 - Inference script for testing on 12 multimodal tasks
 - Quick reference guide for inference usage
 
-The repository does not include implementation source code, as the architecture is currently undergoing finalization and preparation for peer review and formal publication.
-
-A comprehensive research paper and open-source framework may follow upon completion of the validation process.
+The repository does not include implementation source code, as the architecture is currently undergoing finalization
