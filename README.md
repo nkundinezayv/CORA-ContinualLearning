@@ -209,7 +209,7 @@ All components operate within a unified continual-learning loop, enabling seamle
 
 ### Validation Protocol
 
-Following 20+ sequential task training, the model was evaluated on previously unseen MNIST digit images to verify that early-learned knowledge persisted without degradation. This external validation confirmed that training metrics reflect genuine task retention rather than training artifacts.
+Following 11+ sequential task training, the model was evaluated on previously unseen MNIST digit images to verify that early-learned knowledge persisted without degradation. This external validation confirmed that training metrics reflect genuine task retention rather than training artifacts.
 
 ### Inference Results
 
