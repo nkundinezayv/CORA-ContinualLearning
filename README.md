@@ -57,7 +57,7 @@ All modalities are projected into a shared reasoning space, enabling experts to 
 
 ### Performance Metrics (40-Epoch Run)
 
-![CORA Training Metrics - 40 Epoch Run](cora-training-metrics.png)
+<img width="1477" height="950" alt="Screenshot 2025-12-04 at 16 54 19" src="https://github.com/user-attachments/assets/7b2921f8-78f1-435e-ad7e-3bf57d808ab6" />
 
 #### Key Observations
 
@@ -230,6 +230,4 @@ This repository provides:
 - Inference script for testing on 12 multimodal tasks
 - Quick reference guide for inference usage
 
-The repository does not include implementation source code, as the architecture is currently undergoing finalization and preparation for peer review and formal publication.
-
-A comprehensive research paper and open-source framework may follow upon completion of the validation process.
+The repository does not include implementation source code, as the architecture is currently undergoing finalization
