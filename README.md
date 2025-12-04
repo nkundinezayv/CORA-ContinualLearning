@@ -4,7 +4,7 @@
 
 **Validated on 12 Diverse Tasks Across Vision, Text, and Audio Domains**
 
-<img width="1013" height="308" alt="CORA Architecture Overview" src="https://github.com/user-attachments/assets/e44959c2-a2d7-4b61-b656-aea0c6d2e11e" />
+<img width="1013" height="308" alt="Screenshot 2025-12-03 at 19 15 00" src="https://github.com/user-attachments/assets/68b5fe74-dcbb-4d77-baa4-aa29ef13913b" />
 
 ---
 
@@ -144,7 +144,7 @@ To evaluate the true robustness of the architecture, the replay buffer was compl
 
 ### Results
 
-<img width="732" height="474" alt="No-Replay Experiment Results" src="https://github.com/user-attachments/assets/05e959a1-f42e-4d62-8847-b5eecafdc258" />
+<img width="732" height="474" alt="Screenshot 2025-12-03 at 15 51 02" src="https://github.com/user-attachments/assets/0c777495-6737-4ea5-9197-6402e81244ef" />
 
 The model demonstrated the following properties:
 
@@ -213,7 +213,7 @@ Following 20+ sequential task training, the model was evaluated on previously un
 
 ### Inference Results
 
-<img width="970" height="251" alt="Post-Training MNIST Inference" src="https://github.com/user-attachments/assets/a98d1128-b56e-4fc7-8bae-4794ddefa583" />
+<img width="970" height="251" alt="Screenshot 2025-12-03 at 19 38 36" src="https://github.com/user-attachments/assets/38b5f58b-f09a-4888-827b-def229962334" />
 
 The model correctly classified new digit images with high confidence, confirming:
 
