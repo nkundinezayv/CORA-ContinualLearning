@@ -35,38 +35,50 @@ This represents a fundamental breakthrough in continual learning.
 
 ---
 
-## The Problem: Catastrophic Forgetting
-
-For over three decades, machine learning has faced a fundamental challenge: **catastrophic forgetting**. When neural networks learn new tasks sequentially, they systematically overwrite previously learned knowledge, degrading performance on earlier tasks to near-zero accuracy.
-
-### Why This Matters
-
-Traditional neural networks cannot:
-- Learn multiple tasks without forgetting earlier ones
-- Adapt to new information without retraining from scratch
-- Build truly intelligent systems that learn continuously
-- Scale beyond single-task or fixed-domain applications
-
-This limitation has constrained AI systems to operate in isolated task domains or rely on expensive, memory-intensive replay buffers that store all historical data—an impractical solution for real-world deployment.
-
-### The CORA Solution
-
-CORA solves catastrophic forgetting through **architectural design**, not data storage. The system demonstrates:
-
-- **Zero catastrophic forgetting** across sequential task learning
-- **Stability without replay buffers** – proved through controlled experiments
-- **100% knowledge retention** on previously learned tasks
-- **Efficient scaling** across diverse modalities (vision, text, audio)
-
-This represents a fundamental breakthrough in continual learning.
-
----
-
 ## Overview
 
 CORA (Continual Optimized Recursive Architecture) is a custom continual-learning system designed to sequentially learn across vision, text, and audio tasks without catastrophic forgetting. The system dynamically expands its internal modular experts, intelligently routes information between them, and maintains stable performance across extended training sequences.
 
 Unlike conventional neural networks that experience performance collapse when trained on sequential tasks, CORA preserves knowledge of previously learned tasks, only increasing capacity when necessary, and maintains measurable performance retention across all learned domains.
+
+---
+
+## Key Capabilities
+
+### Continual Learning Without Catastrophic Forgetting
+
+The architecture learns tasks sequentially while preserving 100% retention on previously learned tasks. Performance metrics demonstrate consistent stability across the full task sequence without degradation.
+
+### Dynamic Expert Growth
+
+New experts are allocated based on representational demand rather than arbitrary schedules. This data-driven approach ensures efficient capacity utilization and prevents unnecessary model expansion.
+
+### Multimodal Task Support
+
+CORA successfully trains and retains knowledge across 12 diverse tasks:
+
+**Vision Domain:** MNIST, CIFAR-01, CIFAR-10, EMNIST-Letters, FashionMNIST
+
+**Text Domain:** TEXT-SENT, TEXT-IMDB, TEXT-AGNEWS, TEXT-GOEMOTIONS, TEXT-MULTINLI, TEXT-QA
+
+**Audio Domain:** AUDIO-SPEECH
+
+### Self-Calibration and Stability Mechanisms
+
+The system employs multiple internal signals to maintain long-horizon stability:
+
+- Curiosity-driven expert routing
+- Forward-model prediction error monitoring
+- Self-awareness scoring and refinement
+- Entropy-based exploration bonuses
+
+These mechanisms prevent representation collapse and stabilize learning across hundreds of sequential task updates.
+
+### Unified Latent Space
+
+All modalities are projected into a shared reasoning space, enabling experts to generalize patterns across different domains and reducing inter-task interference.
+
+---
 
 ## Why Existing Approaches Fail
 
@@ -101,41 +113,6 @@ CORA overcomes these limitations through:
 - **Modular expansion** – capacity grows based on representational demand
 - **Shared latent space** – knowledge transfers across domains
 - **Intrinsic stability signals** – curiosity and self-awareness prevent collapse
-
----
-
-### Continual Learning Without Catastrophic Forgetting
-
-The architecture learns tasks sequentially while preserving 100% retention on previously learned tasks. Performance metrics demonstrate consistent stability across the full task sequence without degradation.
-
-### Dynamic Expert Growth
-
-New experts are allocated based on representational demand rather than arbitrary schedules. This data-driven approach ensures efficient capacity utilization and prevents unnecessary model expansion.
-
-### Multimodal Task Support
-
-CORA successfully trains and retains knowledge across 12 diverse tasks:
-
-**Vision Domain:** MNIST, CIFAR-01, CIFAR-10, EMNIST-Letters, FashionMNIST
-
-**Text Domain:** TEXT-SENT, TEXT-IMDB, TEXT-AGNEWS, TEXT-GOEMOTIONS, TEXT-MULTINLI, TEXT-QA
-
-**Audio Domain:** AUDIO-SPEECH
-
-### Self-Calibration and Stability Mechanisms
-
-The system employs multiple internal signals to maintain long-horizon stability:
-
-- Curiosity-driven expert routing
-- Forward-model prediction error monitoring
-- Self-awareness scoring and refinement
-- Entropy-based exploration bonuses
-
-These mechanisms prevent representation collapse and stabilize learning across hundreds of sequential task updates.
-
-### Unified Latent Space
-
-All modalities are projected into a shared reasoning space, enabling experts to generalize patterns across different domains and reducing inter-task interference.
 
 ---
 
